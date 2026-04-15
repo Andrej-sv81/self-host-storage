@@ -1,0 +1,11 @@
+services:
+  nextcloud:
+    image: nextcloud
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    volumes:
+      - nextcloud_data:/var/www/html
+
+volumes:
+  nextcloud_data:
