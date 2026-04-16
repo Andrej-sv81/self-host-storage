@@ -1,18 +1,24 @@
-Overview:
--a simple project to repurpose an old laptop as a nextloud storage
--runs docker container with nextcloud, mariadb and nginx to selfhost a cloud storage
--simple .sh script to run docker, create a cloudflare tunnel and set its randomly generated URL in the nextclouds trusted domains
--build it with cloudflares test domain to prototype before real implementation for a homelab with cloud storage and possible other services
+## Overview
 
--if you want to try it yourself you will need docker and cludflare installed as well as add .env file with basic settings for MQSQL and NEXTCLOUD usernames and passwords
+* A simple project to repurpose an old laptop as a Nextcloud storage server
+* Runs Docker containers with Nextcloud, MariaDB, and Nginx to self-host cloud storage
+* Includes a simple `.sh` script to start Docker, create a Cloudflare Tunnel, and automatically set the generated URL in Nextcloud trusted domains
+* Built using Cloudflare’s temporary domain for prototyping before deploying to a real homelab setup
 
+## Requirements
 
-Tech stack:
--Docker
--Nextcloud
--NGINX
--Cloudflare Tunnel
+* Docker installed
+* Cloudflare Tunnel (`cloudflared`) installed
+* A `.env` file with basic settings for MySQL and Nextcloud usernames and passwords
 
-Features:
--File storage
--Remote access
+## Tech Stack
+
+* Docker
+* Nextcloud
+* Nginx
+* Cloudflare Tunnel
+
+## Features
+
+* File storage
+* Remote access
